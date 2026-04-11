@@ -1,0 +1,24 @@
+<header class="navbar">
+  <div class="container nav-content">
+    <div class="nav-brand-container">
+      <img src="/logo-v.png" alt="Consultorio Dental Dra Eydi Zabala" style="height: 40px; width: auto;">
+      <div class="nav-brand-text">
+        <span class="brand-main">{{ config().brand.name }}</span>
+        <span class="brand-sub">{{ config().brand.doctor }}</span>
+      </div>
+    </div>
+    
+    <nav aria-label="Navegación principal">
+      <ul class="nav-links">
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#treatments">Tratamientos</a></li>
+        <li><a href="#doctor">La Doctora</a></li>
+        <li><a href="#testimonials">Testimonios</a></li>
+      </ul>
+    </nav>
+
+    <div>
+      <a [href]="waLink()" target="_blank" class="btn btn-dark">Agendar Cita</a>
+    </div>
+  </div>
+</header>

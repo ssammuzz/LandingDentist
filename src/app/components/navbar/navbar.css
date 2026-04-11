@@ -1,0 +1,26 @@
+.navbar {
+  position: fixed;
+  top: 0; width: 100%;
+  z-index: 2000;
+  padding: 10px 0; /* Un poco más compacto */
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.nav-content { display: flex; justify-content: space-between; align-items: center; }
+
+.nav-brand-container { display: flex; align-items: center; gap: 12px; }
+.brand-logo { height: 70px; width: auto; object-fit: contain; } /* Tamaño optimizado para el logo */
+
+.nav-brand-text { display: flex; flex-direction: column; line-height: 1.1; }
+.brand-main { font-size: 1.1rem; font-weight: 700; color: var(--clr-primary); text-transform: uppercase; letter-spacing: 0.5px; }
+.brand-sub { font-size: 0.8rem; font-weight: 600; color: var(--clr-dark); font-family: var(--font-body); }
+
+.nav-links { display: flex; list-style: none; gap: 50px; }
+.nav-links a { text-decoration: none; color: var(--clr-dark); font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; transition: var(--transition); }
+.nav-links a:hover { color: var(--clr-primary); }
+
+@media (max-width: 1024px) {
+  .nav-desktop { display: none; }
+}

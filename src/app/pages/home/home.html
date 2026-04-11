@@ -1,0 +1,49 @@
+<div class="site-wrapper">
+  
+  <app-navbar [config]="config()" [waLink]="waLink()"></app-navbar>
+
+  <main id="main-content">
+    
+    <app-hero [config]="config()" [waLink]="waLink()"></app-hero>
+
+    <app-services [services]="services()" [waLink]="waLink()"></app-services>
+
+    <app-about [config]="config()" [waLink]="waLink()"></app-about>
+
+    <!-- Gallery removed as requested -->
+
+    <app-testimonials [testimonials]="testimonials()"></app-testimonials>
+
+  </main>
+
+  <app-footer [config]="config()"></app-footer>
+
+  <!-- Botón WhatsApp flotante mejorado -->
+  <a [href]="waLink()" class="wa-float-btn" target="_blank" aria-label="WhatsApp">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+  </a>
+
+  <style>
+    .wa-float-btn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #25D366;
+      color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+      z-index: 9999;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .wa-float-btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+    }
+  </style>
+
+</div>

@@ -1,0 +1,28 @@
+<footer id="contact" class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="brand-main-f">{{ config().brand.name }}</span>
+      <span class="brand-sub-f">{{ config().brand.doctor }}</span>
+      <p>Excelencia dental en Santa Cruz de la Sierra.</p>
+    </div>
+
+    <div class="footer-section">
+      <h4 class="footer-heading">Contacto</h4>
+      <p>{{ config().contact.phone }}</p>
+      <p>{{ config().contact.email }}</p>
+    </div>
+
+    <div class="footer-section">
+      <h4 class="footer-heading">Ubicación</h4>
+      <a href="https://maps.app.goo.gl/B5HUPkLMJii3iHEM9?g_st=ic" target="_blank" style="color: #b2bec3; text-decoration: none;">
+        Av. Busch Calle 11 Oeste
+      </a>
+    </div>
+
+    <div class="footer-section">
+      <h4 class="footer-heading">Horarios</h4>
+      <p>Lun - Vie: {{ config().schedule.weekdays }}</p>
+      <p>Sáb: {{ config().schedule.saturdays }}</p>
+    </div>
+  </div>
+</footer>

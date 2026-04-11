@@ -1,1 +1,46 @@
-/* You can add global styles to this file, and also import other style files */
+/* -------------------------------------------------------------------------- */
+/* DESIGN SYSTEM: LUXURY DENTAL FORMAL                                        */
+/* -------------------------------------------------------------------------- */
+:root {
+  --clr-primary: #1A365D; /* Azul formal */
+  --clr-secondary: #2C5282;
+  --clr-accent: #3182CE;
+  --clr-dark: #171923;
+  --clr-white: #FFFFFF;
+  --clr-border: #E2E8F0;
+  
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+  
+  --shadow-premium: 0 4px 20px rgba(0,0,0,0.08);
+  --transition: all 0.3s ease;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-body); color: var(--clr-dark); line-height: 1.6; }
+
+.container { max-width: 1140px; margin: 0 auto; padding: 0 20px; }
+
+/* NAVBAR */
+.navbar { position: fixed; top: 0; width: 100%; z-index: 2000; background: var(--clr-white); border-bottom: 1px solid var(--clr-border); padding: 15px 0; }
+.nav-content { display: flex; align-items: center; justify-content: space-between; }
+.brand-main { display: block; font-size: 1.1rem; font-weight: 900; color: var(--clr-primary); text-transform: uppercase; }
+.brand-sub { display: block; font-size: 0.8rem; font-weight: 600; color: var(--clr-secondary); }
+.nav-links { display: flex; list-style: none; gap: 20px; }
+.nav-links li:not(:last-child)::after { content: '|'; margin-left: 20px; color: var(--clr-border); }
+.nav-links a { text-decoration: none; color: var(--clr-dark); font-weight: 600; font-size: 0.75rem; text-transform: uppercase; }
+
+/* HERO BUTTONS */
+.btn { padding: 12px 30px; border-radius: 2px; font-weight: 700; text-transform: uppercase; font-size: 0.75rem; text-decoration: none; transition: var(--transition); }
+.btn-dark { background: var(--clr-primary); color: white; border: 1px solid var(--clr-primary); }
+.btn-dark:hover { background: transparent; color: var(--clr-primary); }
+.btn-outline { background: transparent; color: var(--clr-primary); border: 1px solid var(--clr-primary); }
+.btn-outline:hover { background: var(--clr-primary); color: white; }
+
+/* FOOTER */
+.site-footer { background: var(--clr-dark); color: #A0AEC0; padding: 50px 0; font-size: 0.85rem; }
+.footer-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+.brand-main-f { display: block; color: var(--clr-white); font-weight: 900; }
+.brand-sub-f { display: block; color: #A0AEC0; margin-bottom: 10px; }
+.footer-heading { color: var(--clr-white); margin-bottom: 15px; text-transform: uppercase; font-size: 0.8rem; }

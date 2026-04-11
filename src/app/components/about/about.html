@@ -1,0 +1,33 @@
+<section id="doctor" class="doctor-profile section-spacing alternate-bg">
+  <div class="container doctor-grid">
+    <aside class="doctor-media">
+      <div class="media-frame">
+        <div class="media-placeholder">Retrato Profesional</div>
+        <div class="media-caption shadow-premium">
+          <span class="caption-tag">DIRECTORA MÉDICA</span>
+          <strong>{{ config().brand.fullName }}</strong>
+          <small>Cirujano Dentista</small>
+        </div>
+      </div>
+    </aside>
+    
+    <article class="doctor-info">
+      <h4 class="info-tag">Trayectoria & Compromiso</h4>
+      <h2 class="section-title">Liderazgo en Salud Dental</h2>
+      <p class="info-description">
+        La <strong>{{ config().brand.fullName }}</strong> es reconocida por su meticulosidad técnica y enfoque humano. Su práctica profesional se fundamenta en la excelencia y la actualización constante.
+      </p>
+      <div class="credentials-box">
+        <div class="credential">
+          <span class="credential-val">Maestría</span>
+          <p class="credential-desc">Educación Superior en Salud</p>
+        </div>
+        <div class="credential">
+          <span class="credential-val">Especialista</span>
+          <p class="credential-desc">Estética y Rehabilitación Oral</p>
+        </div>
+      </div>
+      <a [href]="waLink()" class="btn btn-primary btn-lg">AGENDAR UNA CONSULTA</a>
+    </article>
+  </div>
+</section>

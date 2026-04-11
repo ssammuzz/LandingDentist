@@ -1,0 +1,28 @@
+<section id="treatments" class="treatments section-spacing">
+  <div class="container">
+    <div class="header-wrapper">
+      <div class="header-line"></div>
+      <span class="section-badge">Excelencia en Salud Dental</span>
+      <h2 class="section-title">Soluciones Odontológicas de Vanguardia</h2>
+      <p class="section-subtitle">
+        En nuestro consultorio, cada tratamiento es un equilibrio perfecto entre 
+        <strong>tecnología de precisión</strong> y una <strong>atención humana excepcional</strong>, 
+        diseñadas para transformar no solo tu salud, sino también tu confianza.
+      </p>
+    </div>
+
+    <div class="services-grid">
+      @for (service of services(); track service.id) {
+        <article class="service-card">
+          <div class="service-image-container">
+             <img [src]="service.image" [alt]="service.title" class="service-image" loading="lazy">
+          </div>
+          <h3>{{ service.title }}</h3>
+          <p>{{ service.description }}</p>
+          <a [href]="waLink()" class="service-link" target="_blank">Consultar tratamiento →</a>
+        </article>
+      }
+    </div>
+  </div>
+</section>
+

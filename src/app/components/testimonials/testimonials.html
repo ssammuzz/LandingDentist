@@ -1,0 +1,34 @@
+<section id="testimonials" class="testimonials section-spacing">
+  <div class="container">
+    <div class="header-wrapper">
+      <div class="header-line"></div>
+      <span class="section-badge">Testimonios Reales</span>
+      <h2 class="section-title">Voces de Confianza</h2>
+      <p class="section-subtitle">
+        Más allá de los tratamientos, nos llena de orgullo ser parte de la transformación 
+        que nuestros pacientes experimentan al recuperar su mejor sonrisa.
+      </p>
+    </div>
+
+    <div class="testimonials-grid">
+      @for (item of testimonials(); track item.name) {
+        <article class="testimonial-card">
+          <div class="testimonial-content">
+            <div class="rating-stars">
+              @for (star of [1,2,3,4,5]; track star) {
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="#F1C40F" stroke="#F1C40F"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              }
+            </div>
+            <p class="testimonial-text">"{{ item.comment }}"</p>
+          </div>
+          <footer class="testimonial-footer">
+            <div class="author-avatar">{{ item.name.charAt(0) }}</div>
+            <div class="author-info">
+              <span class="testimonial-author">{{ item.name }}</span>
+            </div>
+          </footer>
+        </article>
+      }
+    </div>
+  </div>
+</section>
