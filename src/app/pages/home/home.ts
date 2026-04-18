@@ -9,13 +9,14 @@ import { Navbar } from '../../components/navbar/navbar';
 import { Hero } from '../../components/hero/hero';
 import { About } from '../../components/about/about';
 import { Services } from '../../components/services/services';
+import { Promociones } from '../../components/promociones/promociones';
 import { Testimonials } from '../../components/testimonials/testimonials';
 import { Footer } from '../../components/footer/footer';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [Navbar, Hero, About, Services, Testimonials, Footer],
+  imports: [Navbar, Hero, About, Services, Promociones, Testimonials, Footer],
   templateUrl: './home.html',
   styleUrl: './home.css'
 })

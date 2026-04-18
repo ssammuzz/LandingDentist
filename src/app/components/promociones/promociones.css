@@ -1,0 +1,38 @@
+.section-spacing { padding: 120px 0; background: #fff; }
+.header-wrapper { text-align: center; max-width: 700px; margin: 0 auto 80px; position: relative; }
+.header-line { width: 80px; height: 4px; background: linear-gradient(90deg, var(--clr-primary), var(--clr-accent)); margin: 0 auto 25px; border-radius: 2px; }
+.section-badge { display: inline-block; background: transparent; color: var(--clr-primary); padding: 5px 0; font-weight: 800; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 20px; border-bottom: 2px solid var(--clr-primary); }
+.section-title { font-size: 3.5rem; font-weight: 900; color: var(--clr-dark); margin-bottom: 25px; line-height: 1.2; }
+.section-subtitle { color: #555; font-size: 1.2rem; line-height: 1.7; }
+.section-subtitle strong { color: var(--clr-primary); font-weight: 700; }
+
+.promo-grid { display: flex; justify-content: center; }
+.promo-card { 
+  background: #fafafa; 
+  padding: 50px; 
+  border-radius: 24px; 
+  border: 1px solid #eee; 
+  text-align: center; 
+  max-width: 450px;
+  transition: var(--transition);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+}
+.promo-card:hover { transform: translateY(-10px); border-color: var(--clr-primary); box-shadow: 0 20px 40px rgba(0,0,0,0.05); }
+.promo-icon { color: var(--clr-primary); margin-bottom: 25px; }
+.promo-title { font-size: 1.8rem; font-weight: 800; color: var(--clr-dark); margin-bottom: 15px; }
+.promo-desc { color: #666; margin-bottom: 25px; line-height: 1.6; }
+.promo-price { font-size: 3rem; font-weight: 900; color: var(--clr-primary); margin-bottom: 10px; }
+.promo-badge { display: inline-block; background: rgba(26, 54, 93, 0.05); color: var(--clr-primary); padding: 5px 15px; border-radius: 50px; font-weight: 700; font-size: 0.8rem; margin-bottom: 30px; }
+.promo-link {
+  display: inline-flex;
+  align-items: center;
+  color: white;
+  background-color: var(--clr-primary);
+  padding: 15px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+.promo-link:hover { background-color: var(--clr-accent); }
