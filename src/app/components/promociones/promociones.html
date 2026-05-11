@@ -2,29 +2,46 @@
   <div class="container">
     <div class="header-wrapper">
       <div class="header-line"></div>
-      <span class="section-badge">Oferta Especial</span>
-      <h2 class="section-title">
-        Mes de Mayo<br>
-        Sonríe con Ortodoncia
-      </h2>
-      <p class="section-subtitle">
-        ¿Quieres mejorar tu sonrisa este mes? Aprovecha nuestra promoción especial de <strong>ortodoncia</strong> y da el primer paso hacia una sonrisa más alineada, saludable y bonita.
-      </p>
+      <span class="section-badge">Especial de Mayo – Mes de la Sonrisa</span>
+      <h2 class="section-title">Elige cómo empezar tu nueva sonrisa</h2>
+      <p class="section-subtitle">Válido todo mayo · Cupos limitados</p>
     </div>
 
     <div class="promo-grid">
-      <article class="promo-card">
-        <div class="promo-icon">
-           <img src="/ortodoncia.png" alt="Promoción Ortodoncia" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover;">
-        </div>
-        <h3 class="promo-title">Evaluación de Ortodoncia</h3>
-        <p class="promo-desc">
-          Incluye valoración clínica personalizada para revisar tu alineación dental, mordida y orientarte sobre el tratamiento ideal para tu caso.
-        </p>
-        <div class="promo-price">120 Bs.</div>
-        <span class="promo-badge">Válido todo mayo</span>
-        <a [href]="waLink" class="promo-link" target="_blank">¡Agenda tu promoción por WhatsApp! →</a>
-      </article>
+      @for (promo of promotions(); track promo.id) {
+        <article class="promo-card" [class.popular-card]="promo.isPopular">
+          @if (promo.isPopular) {
+            <div class="popular-badge">MÁS POPULAR</div>
+          }
+          
+          <div class="card-header">
+            <span class="promo-subtitle">{{ promo.subtitle }}</span>
+            <h3 class="promo-title">{{ promo.title }}</h3>
+            <p class="promo-desc">{{ promo.description }}</p>
+          </div>
+
+          <div class="price-box">
+            <div class="price-row">
+              <span class="original-price">~~{{ promo.originalPrice }} Bs.~~</span>
+              <span class="final-price">{{ promo.finalPrice }} Bs.</span>
+            </div>
+            <div class="savings-tag">Ahorras {{ promo.originalPrice - promo.finalPrice }} Bs.</div>
+          </div>
+
+          <ul class="features-list">
+            @for (feature of promo.features; track feature) {
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="check-icon"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>{{ feature }}</span>
+              </li>
+            }
+          </ul>
+
+          <button (click)="goToWhatsApp(promo)" class="promo-btn" [class.btn-popular]="promo.isPopular">
+            {{ promo.ctaText }}
+          </button>
+        </article>
+      }
     </div>
   </div>
 </section>

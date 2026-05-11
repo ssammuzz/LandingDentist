@@ -36,8 +36,8 @@ export class Home {
       address: 'Santa Cruz de la Sierra, Bolivia'
     },
     schedule: {
-      weekdays: '8:00 AM – 18:00 PM',
-      saturdays: '9:00 AM – 13:00 PM'
+      weekdays: '8:00 AM – 19:30 PM',
+      saturdays: '9:00 AM – 14:00 PM'
     }
   });
 
