@@ -32,7 +32,7 @@ export class Home {
     contact: {
       phone: '+591 70016141',
       whatsapp: '59170016141',
-      email: 'contacto@eydizabala.com',
+      email: 'eydizabalavargas@gmail.com',
       address: 'Santa Cruz de la Sierra, Bolivia'
     },
     schedule: {
@@ -44,7 +44,6 @@ export class Home {
   protected readonly services = signal<DentalService[]>([
     { id: 'endo', title: 'ENDODONCIA', description: 'Tratamientos de conductos avanzados para salvar piezas dentales dañadas.', iconType: 'microscope', image: 'endodoncia.png' },
     { id: 'orto', title: 'ORTODONCIA', description: 'Alineación dental estética y funcional para niños y adultos.', iconType: 'ruler', image: 'ortodoncia.png' },
-    { id: 'perio', title: 'PERIODONCIA', description: 'Cuidado especializado de las encías y los tejidos de soporte.', iconType: 'gum', image: 'periodoncia.png' },
     { id: 'extrac', title: 'EXTRACCIONES DENTALES', description: 'Procedimientos quirúrgicos seguros y mínimamente invasivos.', iconType: 'tooth-out', image: 'extraccionesdentales.png' },
     { id: 'profi', title: 'PROFILAXIS DENTAL', description: 'Limpieza profunda profesional para una salud oral óptima.', iconType: 'sparkle', image: 'profilaxisdental.png' },
     { id: 'pediatria', title: 'ODONTOPEDIATRÍA', description: 'Atención dental integral para los más pequeños.', iconType: 'child', image: 'odontopediatria.png' },

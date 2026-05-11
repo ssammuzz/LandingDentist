@@ -70,16 +70,24 @@
 @media (max-width: 991.98px) {
   .navbar-collapse {
     background: white;
-    padding: 20px;
-    border-radius: 15px;
-    margin-top: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    border: 1px solid #eee;
+    padding: 30px;
+    border-radius: 0 0 20px 20px;
+    margin-top: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    border: none;
+    max-height: 80dvh;
+    overflow-y: auto;
+  }
+
+  .nav-links-container {
+    text-align: center;
+    margin-bottom: 25px;
   }
 
   .nav-link {
-    padding: 12px 0 !important;
-    border-bottom: 1px solid #f8f9fa;
+    padding: 15px 0 !important;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #f1f1f1;
   }
 
   .nav-link:last-child {
@@ -88,15 +96,13 @@
 
   .w-100-mobile {
     width: 100%;
-    margin-top: 10px;
+    margin-top: 15px;
+    padding: 14px;
+    font-size: 1rem;
     text-align: center;
   }
 
   .brand-main {
-    font-size: 0.9rem;
-  }
-
-  .brand-sub {
-    font-size: 0.65rem;
+    font-size: 1rem;
   }
 }
