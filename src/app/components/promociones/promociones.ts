@@ -38,7 +38,7 @@ export class Promociones {
       title: 'Evaluación + Limpieza 🦷',
       subtitle: 'MÁS POPULAR',
       description: 'Todo lo de la evaluación más una limpieza dental profesional. Empiezas con una boca impecable.',
-      originalPrice: 420,
+      originalPrice: 380,
       finalPrice: 150,
       features: [
         'Evaluación completa de ortodoncia',
